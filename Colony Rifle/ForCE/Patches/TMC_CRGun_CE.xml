@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+			
+  <!--========================= Melee stats ========================-->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>
+				    /Defs/ThingDef[      
+                    defName = "TMC_Gun_CR" or
+					defName = "TMC_Gun_CR_Modernized"
+					]/tools
+                    </xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.55</cooldownTime>
+                                <chanceFactor>1.5</chanceFactor>
+                                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>5</power>
+                                <cooldownTime>2.02</cooldownTime>
+                                <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>muzzle</label>
+                                <capacities>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.55</cooldownTime>
+                                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+
+                <!--===== CRT1 =====-->
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>TMC_Gun_CR</defName>
+                    <statBases>
+					<Mass>3.0</Mass>
+					<RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+					<SightsEfficiency>1.00</SightsEfficiency>
+					<ShotSpread>0.09</ShotSpread>
+					<SwayFactor>1.35</SwayFactor>
+					<Bulk>8.50</Bulk>
+					<WorkToMake>25000</WorkToMake>
+				</statBases>
+				<costList>
+      <Steel>40</Steel>
+	  <WoodLog>15</WoodLog>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+				<Properties>
+					<recoilAmount>1.42</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_545x39mmSoviet_FMJ</defaultProjectile>
+					<warmupTime>1.1</warmupTime>
+					<range>55</range>
+					<burstShotCount>5</burstShotCount>
+					<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+					<soundCast>Shot_TMC_CR</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+					<recoilPattern>Regular</recoilPattern>
+				</Properties>
+				<AmmoUser>
+					<magazineSize>1</magazineSize>
+					<reloadTime>3.5</reloadTime>
+					<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+				</AmmoUser>
+				<FireModes>
+					<aiUseBurstMode>TRUE</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
+					<aimedBurstShotCount>3</aimedBurstShotCount>
+				</FireModes>
+
+				<weaponTags>
+					<li>CE_AI_Rifle</li>
+				</weaponTags>
+                </li>
+				
+				
+				<!--===== CRM =====-->
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>TMC_Gun_CR_Modernized</defName>
+                    <statBases>
+					<Mass>2.9</Mass>
+					<RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+					<SightsEfficiency>1.00</SightsEfficiency>
+					<ShotSpread>0.09</ShotSpread>
+					<SwayFactor>1.35</SwayFactor>
+					<Bulk>8.30</Bulk>
+					<WorkToMake>25000</WorkToMake>
+				</statBases>
+				<costList>
+    <Chemfuel>10</Chemfuel>
+      <Steel>60</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+				<Properties>
+					<recoilAmount>1.42</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_545x39mmSoviet_FMJ</defaultProjectile>
+					<warmupTime>1.1</warmupTime>
+					<range>55</range>
+					<burstShotCount>5</burstShotCount>
+					<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+					<soundCast>Shot_TMC_CR</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+					<recoilPattern>Regular</recoilPattern>
+				</Properties>
+				<AmmoUser>
+					<magazineSize>1</magazineSize>
+					<reloadTime>3.5</reloadTime>
+					<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+				</AmmoUser>
+				<FireModes>
+					<aiUseBurstMode>TRUE</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
+					<aimedBurstShotCount>3</aimedBurstShotCount>
+				</FireModes>
+
+				<weaponTags>
+					<li>CE_AI_Rifle</li>
+				</weaponTags>
+                </li>
+				
+				      </operations>
+        </match>
+    </Operation>
+</Patch>

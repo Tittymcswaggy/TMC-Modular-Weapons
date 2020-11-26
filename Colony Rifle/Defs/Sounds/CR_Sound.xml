@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--===================================== CR shots =============================-->
+<SoundDef>
+<defName>Shot_TMC_CR</defName>  
+ <context>MapOnly</context>   <eventNames />  
+ <maxVoices>4</maxVoices>   <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+      <li Class="AudioGrain_Folder">
+            <clipFolderPath>ColonyRifle</clipFolderPath>
+          </li>
+        </grains> <volumeRange>
+          <min>50</min>        
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.03</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--==================================== LMG shots ===========================-->
+  <SoundDef>
+<defName>Shot_TMC_LMG</defName>  
+ <context>MapOnly</context>   <eventNames />  
+ <maxVoices>4</maxVoices>   <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+      <li Class="AudioGrain_Folder">
+            <clipFolderPath>TMC_LMG</clipFolderPath>
+          </li>
+        </grains> <volumeRange>
+          <min>50</min>        
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.03</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  	
+  <!--=================================== Semi Auto Rifle ===========================-->
+  
+<SoundDef>
+<defName>Shot_TMC_SA</defName>  
+ <context>MapOnly</context>   <eventNames />  
+ <maxVoices>4</maxVoices>   <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+      <li Class="AudioGrain_Folder">
+            <clipFolderPath>TMC_SemiAuto</clipFolderPath>
+          </li>
+        </grains> <volumeRange>
+          <min>50</min>        
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.03</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--==================================== Shotgun ================================-->
+  <SoundDef>
+<defName>Shot_TMC_SG</defName>  
+ <context>MapOnly</context>   <eventNames />  
+ <maxVoices>4</maxVoices>   <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+      <li Class="AudioGrain_Folder">
+            <clipFolderPath>TMC_SG</clipFolderPath>
+          </li>
+        </grains> <volumeRange>
+          <min>50</min>        	
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.03</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!--==================================== HCR ================================-->
+  <SoundDef>
+<defName>Shot_TMC_HCR</defName>  
+ <context>MapOnly</context>   <eventNames />  
+ <maxVoices>4</maxVoices>   <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+      <li Class="AudioGrain_Folder">
+            <clipFolderPath>TMC_HCR</clipFolderPath>
+          </li>
+        </grains> <volumeRange>
+          <min>50</min>        	
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.03</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!--==================================== CCR ================================-->
+  <SoundDef>
+<defName>Shot_TMC_CRSUP</defName>  
+ <context>MapOnly</context>   <eventNames />  
+ <maxVoices>4</maxVoices>   <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+      <li Class="AudioGrain_Folder">
+            <clipFolderPath>TMC_CRSUP</clipFolderPath>
+          </li>
+        </grains> <volumeRange>
+          <min>50</min>        	
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.03</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <!--==================================== CRSMG ================================-->
+  <SoundDef>
+<defName>Shot_TMC_CRSMG</defName>  
+ <context>MapOnly</context>   <eventNames />  
+ <maxVoices>4</maxVoices>   <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+      <li Class="AudioGrain_Folder">
+            <clipFolderPath>TMC_CRSMG</clipFolderPath>
+          </li>
+        </grains> <volumeRange>
+          <min>50</min>        	
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.03</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+   <!--==================================== DMR ================================-->
+  <SoundDef>
+<defName>Shot_TMC_CRDMR</defName>  
+ <context>MapOnly</context>   <eventNames />  
+ <maxVoices>4</maxVoices>   <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+      <li Class="AudioGrain_Folder">
+            <clipFolderPath>TMC_DMR</clipFolderPath>
+          </li>
+        </grains> <volumeRange>
+          <min>50</min>        	
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.03</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--==================================== COVERT ================================-->
+  <SoundDef>
+<defName>Shot_TMC_COVERT</defName>  
+ <context>MapOnly</context>   <eventNames />  
+ <maxVoices>4</maxVoices>   <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+      <li Class="AudioGrain_Folder">
+            <clipFolderPath>TMC_COVERT</clipFolderPath>
+          </li>
+        </grains> <volumeRange>
+          <min>50</min>        	
+          <max>60</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.97</min>        
+          <max>1.03</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  
+  
+  
+  
+</Defs>

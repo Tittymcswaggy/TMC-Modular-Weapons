@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>TMC Modular Weapons</name>
+  <author>Tittymcswaggy</author>
+  <supportedVersions>
+  <li>1.2</li>
+  </supportedVersions>
+  	<packageId>TMC.Armory.Colony.Rifle</packageId>
+
+  <url></url>
+  <description>
+
+   A modular weapon pack from TMC Armory , currently only have AKs sorry :) .
+
+  </description>
+  
+  <modDependencies>
+		<li>
+			<packageId>TMCArmory.Attachments</packageId>
+			<displayName>TMC Attachments</displayName>
+				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2297887939</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>brrainz.harmony</li>
+		<li>TMCArmory.Attachments</li>
+	</loadAfter>
+</ModMetaData>

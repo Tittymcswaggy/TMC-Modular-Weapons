@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+      <!--================================= CRT ===========================-->
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CRTI</defName>
+    <label>5.45x39mmSoviet bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+	  <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+  
+ 
+  
+</Defs>
